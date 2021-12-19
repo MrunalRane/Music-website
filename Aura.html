@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AURA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+	<link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body>
+    <div class="header">
+    <h1><center><i class="fa fa-music" aria-hidden="true"></i> AURA <i class="fa fa-headphones" aria-hidden="true"></i></center></h1>
+    </div>
+
+      
+	 <div class="textbox">
+		<ul>			
+			<li><a href="" target="_parent"><b>Home</b></a></li>
+			<li><a href="E:\IP PROJECT\genera\genera.html" target="_parent">Genere</a></li>
+			<li><a href="E:\IP PROJECT\album\album.html" target="_parent">Album</a></li>
+			<li><a href="E:\IP PROJECT\project2\project.html" target="_parent">Artist</a></li>
+            <li><a href="E:\IP PROJECT\maker\maker.html" target="_parent">Maker</a></li>
+			<li><a href="E:\IP PROJECT\premuim\premium.html" target="_parent">Premium</a></li>
+		</ul>
+     </div>
+
+        
+
+        <div class="content">
+        	<h5>Music <font><sub>is Life</sub></font></br>Thats why our<font><sub> heart has<sub></font><br> beats</h5>
+        	
+        </div>
+
+
+      <div class="main_div">
+        <div class="name_container">
+            <h1 id="title" style="font-family: Tempus Sans ITC">Roses</h1>
+            <!-- <h2 id="artist" style="color: grey;font-family:Tempus Sans ITC; font-size: 22px; position: absolute;">Imanbek Remix</h2>  -->
+            
+            <div class="img_container"> 
+            <img src="roses.jpg">
+            </div>
+            <audio src="Roses (Imanbek Remix).mp3"></audio>
+            
+            
+            <div class="controls">
+                <i class="fas fa-backward" id="back" title="back"></i>
+                <i class="fas fa-play main_button" id="play" title="play"></i>
+                <i class="fas fa-forward" id="forward" title="forward"></i>
+            </div>
+
+        </div>
+    </div>
+    <script type="text/javascript">
+        const music = document.querySelector("audio");
+        const img = document.querySelector("img");
+        const play = document.getElementById("play");
+        const title = document.getElementById("title");
+        const artist = document.getElementById("artist");
+        const prev = document.getElementById("back");
+        const next = document.getElementById("forward");
+
+        let isPlaying = false;
+        const playMusic = () => {
+            isPlaying = true;
+            music.play();
+            play.classList.replace("fa-play","fa-pause");
+            img.classList.add("ani");
+        }; 
+
+        const pauseMusic = () => {
+            isPlaying = false;
+            music.pause();
+            play.classList.replace("fa-pause","fa-play");
+            img.classList.remove("ani");
+        }; 
+
+        play.addEventListener("click",() => {
+            if(isPlaying){
+            pauseMusic();
+            }
+            else{
+            playMusic();
+            }
+            
+        });
+
+        const songs = [
+        {
+            name: "data1",
+            title: "Roses",
+            artist: "imanbek remix",
+        },
+        {
+            name: "Ariana Grande - 7 rings",
+            title: "7 rings",
+            artist: "Arena Grande",
+
+        },
+        {
+            name: "Ariana Grande - Break Free ft. Zedd",
+            title: "Break Free",
+            artist: "Arena Grande",
+
+        },
+
+        {
+            name: "Ariana Grande - no tears left to cry",
+            title: "No Tears",
+            artist: "Arena Grande",
+
+        },
+
+        {
+            name: "Ariana Grande - One Last Time (Lyric Video)",
+            title: "One Last Time",
+            artist: "Arena Grande",
+
+        },
+
+
+
+
+        ]
+
+        const loadSong = (songs) =>{
+            title.textContent = songs.title;
+            artist.textContent = songs.artist;
+            music.src = "music/" +songs.name + ".mp3";
+            img.src = "image/" +data1+ ".jpg";
+        }
+        songIndex = 0;
+        const nextSong =() =>{
+            songIndex = (songIndex + 1) % songs.length;
+            loadSong(songs[songIndex]);
+            playMusic();
+         };
+         const prevSong =() =>{
+            songIndex = (songIndex - 1 + songs.length )% songs.length;
+            loadSong(songs[songIndex]);
+            playMusic();
+         };
+
+        next.addEventListener("click", nextSong);
+        prev.addEventListener("click", prevSong);
+
+
+        
+    </script>  
+   
+
+    <!-- <div class="box">
+    	<form action="" method="get">
+    		<input type="submit" value="Get more">
+    		
+    	</form>
+    </div>
+ -->
+  
+</body>
+</html>

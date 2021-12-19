@@ -1,0 +1,183 @@
+.header
+{
+	background: linear-gradient(rgba(69,41,81,0.5),rgba(69,41,81,0.5)),url(star.jpg);
+	background-size: cover;
+	height: 90px;
+}
+h2
+{
+	position: absolute;
+	left: 45%;
+	top: 6px;
+	line-height: 90px;
+	color: #fff;
+	font-family: chiller;
+	font-size: 400%;
+}
+ 
+.textbox{
+	float: right;
+	border: 1px solid solid black;
+
+}
+ul li{
+	float: left;
+	width: 120px;
+    font-family: jokerman /*or broadway */,sans-serif;
+    text-transform: capitalize;
+    list-style-type: none;
+    font-size: 25px;
+
+}
+ul li a{
+	text-decoration: none;
+	color: white;
+
+}
+ul li a:hover{
+	color: hotpink;
+}
+b{
+	color: hotpink;
+	border-bottom: 2px solid hotpink;
+	font-weight: normal;
+}
+
+body{
+	background:  linear-gradient(rgba(0,0,0,0.68),rgba(0,0,0,0.68)),url(music4.jpg)no-repeat;
+	background-size: cover;
+}
+.cover{
+	border: 1px solid black;
+	text-align: center;
+	width: 300px;
+	height: 450px;
+	position: absolute;
+	left: 10px;
+	top: 20px;
+	border-radius: 8px;
+	box-shadow: 0px 0px 16px 7px;
+	opacity: 0.6px;
+}
+.subcover{
+	border-bottom: 1px solid none;
+	background: black;
+	width: 300px;
+	height: 450px;
+	opacity: 0.6;
+	border-radius: 8px;
+
+}
+.coverimage{
+	text-align: center;
+}
+img{
+	border-radius: 20px;
+	position: absolute;
+	left: 20%;
+	top: 10%;
+	margin: -10px -9px;
+	opacity: 0.7;
+}
+.text{
+	position: absolute;
+	left: 65px;
+	top: 50%;
+	margin: -1px 10px;
+
+}
+h1{
+	color: white;
+	font-family: jokerman,sans-serif;
+	line-height: 7px;
+	font-weight: normal;
+
+}
+h2{
+	color: white;
+	font-family: jokerman,sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	opacity: 0.3px;
+	margin-top: -6px; 
+
+}
+.line{
+	border-bottom: 2px solid white;
+	position: absolute;
+	top: 65%;
+	left: 40px;
+	width: 220px;
+	box-shadow: 1px 0px 4px;
+	color: hotpink;
+}
+.fa-circle{
+	color: hotpink;
+	position: absolute;
+	left: 35px;
+	margin-top: -7px;
+
+}
+.number{}
+h3{
+	position: absolute;
+	left: 15%;
+	top: 63%;
+	font-size: 14px;
+	color: white;
+	font-family: jokerman,sans-serif;
+	font-weight: normal;
+}
+h4{
+	position: absolute;
+	left: 81%;
+	top: 62%;
+	font-size: 14px;
+	color: white;
+	font-family: jokerman,sans-serif;
+	font-weight: normal;
+}
+.content{
+	position: absolute;
+	left: 35%;
+	top: 20%;
+}
+h5{
+	font-size: 50px;
+	color: white;
+	font-family: broadway, sans-serif;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+font{
+	color: white;
+	opacity: 0.1;
+}
+h6{
+	font-size: 14px;
+	color: white;
+	font-family: broadway, sans-serif;
+	font-weight: normal;
+	width: 550px;
+	margin-top: -16px;
+	word-spacing: 5px;
+	opacity: 0.2;
+	text-align: justify;
+}
+/*.box{
+	position: absolute;
+	left: 35%;
+	top: 55%;
+}
+input[type="submit"]{
+	padding: 10px;
+	border:none;
+	opacity: 0.8;
+	color: white;
+	border-radius: 4px;
+
+}
+input[type="submit"]:hover{
+	background-color: deeppink;
+
+}*/
